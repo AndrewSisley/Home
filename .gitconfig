@@ -1,0 +1,13 @@
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	pushf = push --force-with-lease
+[user]
+	email = a.j.sisley@hotmail.com
+	name = Andrew Sisley
+[core]
+	editor = vim
+	excludesfile = /home/andy/.gitignore_global
+[push]
+	default = simple
+[rebase]
+	autosquash = true
