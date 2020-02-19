@@ -18,3 +18,5 @@ alias c.='cargo'
 alias c.b='cargo build'
 alias c.t='cargo test'
 alias c.bench='rustup run nightly cargo bench'
+
+alias v='vim'
