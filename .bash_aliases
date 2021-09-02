@@ -26,6 +26,8 @@ alias c.t='cargo test'
 alias c.bench='rustup run nightly cargo bench'
 alias c.r='cargo run'
 
+alias d.b='dotnet build'
+
 alias v='vim'
 alias e='vim ~/.bash_aliases'
 
