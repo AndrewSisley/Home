@@ -44,9 +44,12 @@ alias v='vim'
 alias e='vim ~/.bash_aliases'
 alias ee='source ~/.bash_aliases'
 
-alias f='nemo $(fzf --height 40% --reverse)'
-alias f.v='vim $(fzf --height 40% --reverse)'
-alias f.vs='code $(fzf --height 40% --reverse)'
+# Credit to Roy-Orbison for this command on https://github.com/junegunn/fzf/issues/337#issuecomment-977592444
+export FZF_DEFAULT_COMMAND='find . \! \( -type d -path ./.git -prune \) \! -type d \! -name '\''*.tags'\'' -printf '\''%P\n'\'
+alias f='fzf'
+alias f.n=fzf_nemo
+alias f.v=fzf_vim
+alias f.vs=fzf_code
 
 alias s.pg='sudo -u postgres psql postgres'
 
@@ -60,3 +63,21 @@ alias p.d.db.vs='cd ~/Projects/Source/defradb/db && code .'
 alias cl='clear'
 
 alias python='python3'
+
+fzf_vim() {
+    local fname
+    fname=$(fzf) || return
+    vim "$fname"
+}
+
+fzf_nemo() {
+    local fname
+    fname=$(fzf) || return
+    nemo "$fname"
+}
+
+fzf_code() {
+    local fname
+    fname=$(fzf) || return
+    code "$fname"
+}
