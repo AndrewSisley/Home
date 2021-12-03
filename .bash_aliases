@@ -42,6 +42,7 @@ alias go.d='godoc -http=:6060'
 
 alias v='vim'
 alias e='vim ~/.bash_aliases'
+alias ee='source ~/.bash_aliases'
 
 alias s.pg='sudo -u postgres psql postgres'
 
