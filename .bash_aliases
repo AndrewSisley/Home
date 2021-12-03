@@ -44,6 +44,10 @@ alias v='vim'
 alias e='vim ~/.bash_aliases'
 alias ee='source ~/.bash_aliases'
 
+alias f='nemo $(fzf --height 40% --reverse)'
+alias f.v='vim $(fzf --height 40% --reverse)'
+alias f.vs='code $(fzf --height 40% --reverse)'
+
 alias s.pg='sudo -u postgres psql postgres'
 
 alias p='cd ~/Projects'
