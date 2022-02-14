@@ -60,6 +60,7 @@ alias p.d.vs='cd ~/Projects/Source/defradb && code .'
 alias p.d.db='cd ~/Projects/Source/defradb/db'
 alias p.d.db.vs='cd ~/Projects/Source/defradb/db && code .'
 
+alias d.ml='make lint'
 alias cl='clear'
 
 alias python='python3'
