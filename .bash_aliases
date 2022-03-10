@@ -38,7 +38,12 @@ alias d.rr='dotnet run -c Release'
 alias go.t.c='go clean -testcache'
 alias go.t='go test ./...'
 alias go.t.r='go test ./... --run'
+alias go.b.r=gobench
 alias go.d='godoc -http=:6060'
+
+gobench() {
+    go test ./... -bench=$1 -run=$1
+}
 
 alias v='vim'
 alias e='vim ~/.bash_aliases'
