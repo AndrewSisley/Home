@@ -39,7 +39,7 @@ alias go.t.c='go clean -testcache'
 alias go.t='go test ./...'
 alias go.t.r='go test ./... --run'
 alias go.b.r=gobench
-alias go.d='godoc -http=:6060'
+alias go.d='xdg-open http://localhost:6060 && godoc -http=:6060'
 
 gobench() {
     go test ./... -bench=$1 -run=$1
