@@ -42,7 +42,7 @@ alias go.b.r=gobench
 alias go.d='xdg-open http://localhost:6060 && godoc -http=:6060'
 
 gobench() {
-    go test ./... -bench=$1 -run=$1
+    go test ./... -bench=$1 -run=$1 --count 5
 }
 
 alias v='vim'
