@@ -64,6 +64,8 @@ alias p.d='cd ~/Projects/Source/defradb'
 alias p.d.vs='cd ~/Projects/Source/defradb && code .'
 alias p.d.db='cd ~/Projects/Source/defradb/db'
 alias p.d.db.vs='cd ~/Projects/Source/defradb/db && code .'
+alias p.l='cd ~/Projects/Source/lens-vm/lens'
+alias p.l.vs='cd ~/Projects/Source/lens-vm/lens && code .'
 
 alias d.ml='make lint'
 alias cl='clear'
