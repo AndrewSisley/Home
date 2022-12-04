@@ -42,6 +42,9 @@ alias go.t.r='go test ./... --run'
 alias go.b.r=gobench
 alias go.d='xdg-open http://localhost:6060 && godoc -http=:6060'
 
+alias m.b='make build'
+alias m.r='make run'
+
 gobench() {
     go test ./... -bench=$1 -run=$1 --count 5
 }
