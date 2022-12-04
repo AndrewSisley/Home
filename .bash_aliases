@@ -29,6 +29,7 @@ alias c.b='cargo build'
 alias c.t='cargo test'
 alias c.bench='rustup run nightly cargo bench'
 alias c.r='cargo run'
+alias c.d='cargo doc --open'
 
 alias d.r='dotnet run'
 alias d.b='dotnet build'
