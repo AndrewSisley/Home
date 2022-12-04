@@ -70,7 +70,7 @@ alias p.d.db='cd ~/Projects/Source/defradb/db'
 alias p.d.db.vs='cd ~/Projects/Source/defradb/db && code .'
 alias p.l='cd ~/Projects/Source/lens-vm/lens'
 alias p.l.vs='cd ~/Projects/Source/lens-vm/lens && code .'
-
+alias p.l.t='(cd ~/Projects/Source/lens-vm/lens && make test)'
 alias d.ml='make lint'
 alias cl='clear'
 
