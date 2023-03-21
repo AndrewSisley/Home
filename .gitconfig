@@ -1,6 +1,6 @@
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	pushf = push --force-with-lease
+	pushf = push --force-with-lease --force-if-includes
 [user]
 	email = a.j.sisley@hotmail.com
 	name = Andrew Sisley
